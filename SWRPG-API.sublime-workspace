@@ -1,0 +1,313 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"in",
+				"increase_attribute"
+			],
+			[
+				"jQuery",
+				"JQuery\tinterface"
+			],
+			[
+				"by",
+				"bypassSecurityTrustHtml\tmethod"
+			],
+			[
+				"tr",
+				"trustedHTML\tproperty"
+			],
+			[
+				"tru",
+				"trustedURL\tproperty"
+			],
+			[
+				"Ele",
+				"ElementRef\talias"
+			],
+			[
+				"El",
+				"ElementRef\talias"
+			],
+			[
+				"get",
+				"getElementById\tmethod"
+			],
+			[
+				"ht",
+				"htmlContainer\tproperty"
+			],
+			[
+				"s",
+				"bypassSecurityTrustScript\tmethod"
+			],
+			[
+				"Ht",
+				"HTMLDocument\tinterface"
+			],
+			[
+				"doc",
+				"Document\tinterface"
+			],
+			[
+				"HttpC",
+				"HttpClientModule\talias"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "Gemfile",
+			"settings":
+			{
+				"buffer_size": 1596,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 150.0,
+		"last_filter": "Package Control: in",
+		"selected_items":
+		[
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 432.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/Nicolas/Documents/GitHub/swrpg-api"
+	],
+	"file_history":
+	[
+		"/C/Users/Nicolas/Documents/GitHub/swrpg-api/Gemfile",
+		"/C/Users/Nicolas/Documents/GitHub/Shadowrun/Shadowrun-api/config/routes.rb",
+		"/C/Users/Nicolas/Documents/GitHub/Shadowrun/Shadowrun-api/app/models/metatype.rb",
+		"/C/Users/Nicolas/Documents/GitHub/Shadowrun/Shadowrun-api/app/models/runner.rb",
+		"/C/Users/Nicolas/Documents/GitHub/Shadowrun/Shadowrun-api/spec/factories/runner_factory.rb",
+		"/C/Users/Nicolas/Documents/GitHub/Shadowrun/Shadowrun-api/db/migrate/20180304035017_create_metatypes.rb",
+		"/C/Users/Nicolas/Documents/GitHub/Shadowrun/Shadowrun-api/spec/models/metatype_spec.rb",
+		"/C/Users/Nicolas/Documents/GitHub/Shadowrun/Shadowrun-api/spec/factories/metatype_factory.rb",
+		"/C/Users/Nicolas/Documents/GitHub/Shadowrun/Shadowrun-api/app/controllers/runner_controller.rb",
+		"/C/Users/Nicolas/Documents/GitHub/Shadowrun/Shadowrun-api/spec/requests/runner_controller_spec.rb",
+		"/C/Users/Nicolas/Documents/GitHub/Shadowrun/Shadowrun-api/Gemfile",
+		"/C/Users/Nicolas/Documents/GitHub/Shadowrun/Shadowrun-api/log/test.log",
+		"/C/Users/Nicolas/Documents/GitHub/Shadowrun/Shadowrun-api/spec/factories/user_factor.rb",
+		"/C/Users/Nicolas/Documents/GitHub/Shadowrun/Shadowrun-api/app/models/user.rb",
+		"/C/Users/Nicolas/Documents/GitHub/Shadowrun/Shadowrun-api/spec/rails_helper.rb",
+		"/C/Users/Nicolas/Documents/GitHub/Shadowrun/Shadowrun-api/spec/support/factory_bot.rb",
+		"/C/Users/Nicolas/Documents/GitHub/Shadowrun/Shadowrun-api/spec/factories/user.rb",
+		"/C/Users/Nicolas/Documents/GitHub/Shadowrun/Shadowrun-api/spec/controllers/runner_controller_spec.rb",
+		"/C/Users/Nicolas/Documents/GitHub/Shadowrun/Shadowrun-api/db/migrate/20180304034121_create_runners.rb",
+		"/C/Users/Nicolas/Documents/GitHub/Shadowrun/Shadowrun-api/spec/models/runner_spec.rb",
+		"/C/Users/Nicolas/Documents/GitHub/Shadowrun/Shadowrun-api/db/test.sqlite3",
+		"/C/Users/Nicolas/Documents/GitHub/Shadowrun/Shadowrun-api/config/application.rb",
+		"/C/Users/Nicolas/Documents/GitHub/Sol Eternia/Picross/ProjectSettings/UnityConnectSettings.asset",
+		"/C/Users/Nicolas/Documents/GitHub/swrpg/src/app/player/pc-create/pc-create.component.html",
+		"/C/Users/Nicolas/Documents/GitHub/swrpg/src/app/player/pc-create/pc-create.service.ts",
+		"/C/Users/Nicolas/Documents/GitHub/swrpg/src/app/gm/gm-view/gm-view.component.ts",
+		"/C/Users/Nicolas/Documents/GitHub/swrpg/src/app/gm/gm-view/gm-view.service.ts",
+		"/C/Users/Nicolas/Documents/GitHub/swrpg/src/app/services/server-url.service.ts",
+		"/C/Users/Nicolas/Documents/GitHub/swrpg/src/app/app.module.ts",
+		"/C/Users/Nicolas/Documents/GitHub/swrpg/src/styles.css",
+		"/C/Users/Nicolas/Documents/GitHub/swrpg/src/index.html",
+		"/C/Users/Nicolas/Documents/GitHub/swrpg_old/styles.css",
+		"/C/Users/Nicolas/Documents/GitHub/swrpg_old/app/gm/gm-view/gm-view.component.html",
+		"/C/Users/Nicolas/Documents/GitHub/swrpg/src/app/gm/gm.component.html",
+		"/C/Users/Nicolas/Documents/GitHub/swrpg/src/app/gm/gm.component.ts",
+		"/C/Users/Nicolas/Documents/GitHub/swrpg/src/app/gm/gm-login/gm-login.component.ts",
+		"/C/Users/Nicolas/Documents/GitHub/swrpg/src/app/home.component.html",
+		"/C/Users/Nicolas/Documents/GitHub/swrpg/src/app/app.component.html",
+		"/C/Users/Nicolas/Documents/GitHub/swrpg/src/app/home.component.css",
+		"/C/Users/Nicolas/Documents/GitHub/swrpg/src/app/player/pc-view/pc-view.component.html",
+		"/C/Users/Nicolas/Documents/GitHub/swrpg/src/app/app.component.css",
+		"/C/Users/Nicolas/Documents/GitHub/swrpg_old/index.html",
+		"/C/Users/Nicolas/Documents/GitHub/swrpg/src/app/main.ts",
+		"/C/Users/Nicolas/Documents/GitHub/swrpg/src/main.ts",
+		"/C/Users/Nicolas/Documents/GitHub/g-landing/src/assets/phantom.js",
+		"/C/Users/Nicolas/Documents/phantomjs-2.1.1-windows/examples/loadurlwithoutcss.js",
+		"/C/Users/Nicolas/Documents/GitHub/g-landing/src/index.html"
+	],
+	"find":
+	{
+		"height": 0.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "Gemfile",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1596,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1032,
+								1032
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 156.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.doc":
+	{
+		"height": 0.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "SWRPG-API.sublime-project",
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 304.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

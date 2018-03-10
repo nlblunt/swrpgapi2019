@@ -3,4 +3,6 @@ class Player < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
           :rememberable, :trackable, :validatable, :omniauthable
   include DeviseTokenAuth::Concerns::User
+
+  has_many :pcs
 end
