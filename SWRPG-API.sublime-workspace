@@ -60,10 +60,10 @@
 	"buffers":
 	[
 		{
-			"file": "Gemfile",
+			"file": "config/vhost.conf",
 			"settings":
 			{
-				"buffer_size": 1596,
+				"buffer_size": 576,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -105,11 +105,19 @@
 	},
 	"expanded_folders":
 	[
-		"/C/Users/Nicolas/Documents/GitHub/swrpg-api"
+		"/C/Users/Nicolas/Documents/GitHub/swrpg-api",
+		"/C/Users/Nicolas/Documents/GitHub/swrpg-api/config",
+		"/C/Users/Nicolas/Documents/GitHub/swrpg-api/db"
 	],
 	"file_history":
 	[
 		"/C/Users/Nicolas/Documents/GitHub/swrpg-api/Gemfile",
+		"/C/Users/Nicolas/Documents/GitHub/swrpg-api-old/config/application.rb",
+		"/C/Users/Nicolas/Documents/GitHub/swrpg-api-old/config/environments/production.rb",
+		"/C/Users/Nicolas/Documents/GitHub/swrpg-api-old/Gemfile",
+		"/C/Users/Nicolas/Documents/GitHub/swrpg-api/db/seeds.rb",
+		"/C/Users/Nicolas/Documents/GitHub/swrpg-api-old/config/database.yml",
+		"/C/Users/Nicolas/Documents/GitHub/swrpg-api/config/database.yml",
 		"/C/Users/Nicolas/Documents/GitHub/Shadowrun/Shadowrun-api/config/routes.rb",
 		"/C/Users/Nicolas/Documents/GitHub/Shadowrun/Shadowrun-api/app/models/metatype.rb",
 		"/C/Users/Nicolas/Documents/GitHub/Shadowrun/Shadowrun-api/app/models/runner.rb",
@@ -195,27 +203,29 @@
 			[
 				{
 					"buffer": 0,
-					"file": "Gemfile",
+					"file": "config/vhost.conf",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1596,
+						"buffer_size": 576,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1032,
-								1032
+								356,
+								356
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Ruby/Ruby.sublime-syntax"
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 156.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,

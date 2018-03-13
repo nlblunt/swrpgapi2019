@@ -33,7 +33,7 @@ gem 'rack-cors', :require => 'rack/cors'
 
 gem 'wdm', '>= 0.1.0' if Gem.win_platform?
 
-gem 'pg'
+gem 'pg', '~> 0.18'
 gem 'figaro'
 
 group :development, :test do
