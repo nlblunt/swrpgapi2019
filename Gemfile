@@ -33,6 +33,9 @@ gem 'rack-cors', :require => 'rack/cors'
 
 gem 'wdm', '>= 0.1.0' if Gem.win_platform?
 
+gem 'pg'
+gem 'figaro'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
