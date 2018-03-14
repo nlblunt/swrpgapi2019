@@ -60,10 +60,10 @@
 	"buffers":
 	[
 		{
-			"file": "config/vhost.conf",
+			"file": "config/initializers/devise_token_auth.rb",
 			"settings":
 			{
-				"buffer_size": 576,
+				"buffer_size": 2367,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -106,11 +106,18 @@
 	"expanded_folders":
 	[
 		"/C/Users/Nicolas/Documents/GitHub/swrpg-api",
+		"/C/Users/Nicolas/Documents/GitHub/swrpg-api/app",
+		"/C/Users/Nicolas/Documents/GitHub/swrpg-api/app/models",
 		"/C/Users/Nicolas/Documents/GitHub/swrpg-api/config",
+		"/C/Users/Nicolas/Documents/GitHub/swrpg-api/config/initializers",
 		"/C/Users/Nicolas/Documents/GitHub/swrpg-api/db"
 	],
 	"file_history":
 	[
+		"/C/Users/Nicolas/Documents/GitHub/swrpg-api/config/initializers/devise_token_auth.rb",
+		"/C/Users/Nicolas/Documents/GitHub/swrpg-api/app/models/player.rb",
+		"/C/Users/Nicolas/Documents/GitHub/swrpg-api/config/initializers/devise.rb",
+		"/C/Users/Nicolas/Documents/GitHub/swrpg-api/config/vhost.conf",
 		"/C/Users/Nicolas/Documents/GitHub/swrpg-api/Gemfile",
 		"/C/Users/Nicolas/Documents/GitHub/swrpg-api-old/config/application.rb",
 		"/C/Users/Nicolas/Documents/GitHub/swrpg-api-old/config/environments/production.rb",
@@ -203,25 +210,25 @@
 			[
 				{
 					"buffer": 0,
-					"file": "config/vhost.conf",
+					"file": "config/initializers/devise_token_auth.rb",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 576,
+						"buffer_size": 2367,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								356,
-								356
+								2019,
+								2019
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"tab_size": 4,
+							"syntax": "Packages/Ruby/Ruby.sublime-syntax",
+							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
@@ -291,12 +298,16 @@
 	},
 	"select_project":
 	{
-		"height": 0.0,
+		"height": 500.0,
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"",
+				"C:\\Users\\Nicolas\\Documents\\GitHub\\swrpg2018\\SWRPG2018.sublime-project"
+			]
 		],
-		"width": 0.0
+		"width": 380.0
 	},
 	"select_symbol":
 	{
