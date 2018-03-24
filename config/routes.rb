@@ -2,8 +2,8 @@ Rails.application.routes.draw do
   mount_devise_token_auth_for 'Player', at: 'auth'
 
   #GM CONTROLLER ROUTES
-  get 'gm/gm_check' => "gm#gm_check"
-  post 'gm/get-all-pcs' => "gm#get_all_pcs"
+  get 'gm/gm_status' => "gm#gm_status"
+  get 'gm/get_all_pcs' => "gm#get_all_pcs"
   post 'gm/modify_pc' => "gm#modify_pc"
   post 'gm/pc_modify_strain' => "gm#pc_modify_strain"
   post 'gm/pc_modify_wounds' => "gm#pc_modify_wounds"
@@ -22,7 +22,7 @@ Rails.application.routes.draw do
   post "player/get-player-pcs" => "player#get_player_pcs"
   #get "users/player_check" => "player#player_check"
   post "player/pc-create" => "player#create_pc"
-  #post "player/delete_pc" => "player#delete_pc"
+  post "player/delete_pc" => "player#delete_pc"
   get "player/get-pc-xp/:id" => "player#get_pc_xp"
   post "player/get-pc-skills" => "player#get_pc_skills"
   #get "player/get_pc_career_skills/:id" => "player#get_pc_career_skills"

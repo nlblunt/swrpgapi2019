@@ -1,19 +1,16 @@
 class GmController < ApplicationController
+  before_action :require_login
+
   def index
   end
   
-  def gm_check
-    #Check to see if the GM is signed in
-    if gm_signed_in?
-      render status: :ok, nothing: true
-    else
-      render status: :forbidden, nothing: true
-    end
+  def gm_status
+    #Does this player hav GM Privs?  If so, just return status OK
+    head :ok
   end
   
   def get_all_pcs
     #Returns a list of all PCS
-    
     @pcs = Pc.all
     
     #Render list as json
@@ -82,5 +79,12 @@ class GmController < ApplicationController
     
     #Return the PCs for the session
     render json: g_session.pcs
+  end
+
+  private
+  def require_login
+    unless player_signed_in? and current_player.gm == true
+      head :forbidden
+    end
   end
 end

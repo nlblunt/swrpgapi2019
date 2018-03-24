@@ -60,12 +60,21 @@
 	"buffers":
 	[
 		{
-			"file": "config/initializers/devise_token_auth.rb",
+			"file": "app/controllers/gm_controller.rb",
 			"settings":
 			{
-				"buffer_size": 2367,
+				"buffer_size": 2058,
 				"encoding": "UTF-8",
-				"line_ending": "Unix"
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/controllers/player_controller.rb",
+			"settings":
+			{
+				"buffer_size": 5833,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
 			}
 		}
 	],
@@ -107,17 +116,28 @@
 	[
 		"/C/Users/Nicolas/Documents/GitHub/swrpg-api",
 		"/C/Users/Nicolas/Documents/GitHub/swrpg-api/app",
-		"/C/Users/Nicolas/Documents/GitHub/swrpg-api/app/models",
+		"/C/Users/Nicolas/Documents/GitHub/swrpg-api/app/controllers",
+		"/C/Users/Nicolas/Documents/GitHub/swrpg-api/app/views",
+		"/C/Users/Nicolas/Documents/GitHub/swrpg-api/app/views/gm",
+		"/C/Users/Nicolas/Documents/GitHub/swrpg-api/app/views/player",
 		"/C/Users/Nicolas/Documents/GitHub/swrpg-api/config",
-		"/C/Users/Nicolas/Documents/GitHub/swrpg-api/config/initializers",
-		"/C/Users/Nicolas/Documents/GitHub/swrpg-api/db"
+		"/C/Users/Nicolas/Documents/GitHub/swrpg-api/db",
+		"/C/Users/Nicolas/Documents/GitHub/swrpg-api/db/migrate",
+		"/C/Users/Nicolas/Documents/GitHub/swrpg-api/log"
 	],
 	"file_history":
 	[
-		"/C/Users/Nicolas/Documents/GitHub/swrpg-api/config/initializers/devise_token_auth.rb",
+		"/C/Users/Nicolas/Documents/GitHub/swrpg-api/config/routes.rb",
+		"/C/Users/Nicolas/Documents/GitHub/swrpg-api/app/views/gm/get_all_pcs.json.jbuilder",
+		"/C/Users/Nicolas/Documents/GitHub/Shadowrun/Shadowrun-api/app/controllers/runner_controller.rb",
 		"/C/Users/Nicolas/Documents/GitHub/swrpg-api/app/models/player.rb",
-		"/C/Users/Nicolas/Documents/GitHub/swrpg-api/config/initializers/devise.rb",
+		"/C/Users/Nicolas/Documents/GitHub/Shadowrun/Shadowrun-api/app/models/user.rb",
+		"/C/Users/Nicolas/Documents/GitHub/swrpg-api/db/migrate/20180116182544_devise_token_auth_create_players.rb",
+		"/C/Users/Nicolas/Documents/GitHub/swrpg-api/config/initializers/devise_token_auth.rb",
+		"/C/Users/Nicolas/Documents/GitHub/swrpg-api-old/config/vhost.conf",
 		"/C/Users/Nicolas/Documents/GitHub/swrpg-api/config/vhost.conf",
+		"/C/Users/Nicolas/Documents/GitHub/swrpg-api/.ruby-version",
+		"/C/Users/Nicolas/Documents/GitHub/swrpg-api/config/initializers/devise.rb",
 		"/C/Users/Nicolas/Documents/GitHub/swrpg-api/Gemfile",
 		"/C/Users/Nicolas/Documents/GitHub/swrpg-api-old/config/application.rb",
 		"/C/Users/Nicolas/Documents/GitHub/swrpg-api-old/config/environments/production.rb",
@@ -132,12 +152,10 @@
 		"/C/Users/Nicolas/Documents/GitHub/Shadowrun/Shadowrun-api/db/migrate/20180304035017_create_metatypes.rb",
 		"/C/Users/Nicolas/Documents/GitHub/Shadowrun/Shadowrun-api/spec/models/metatype_spec.rb",
 		"/C/Users/Nicolas/Documents/GitHub/Shadowrun/Shadowrun-api/spec/factories/metatype_factory.rb",
-		"/C/Users/Nicolas/Documents/GitHub/Shadowrun/Shadowrun-api/app/controllers/runner_controller.rb",
 		"/C/Users/Nicolas/Documents/GitHub/Shadowrun/Shadowrun-api/spec/requests/runner_controller_spec.rb",
 		"/C/Users/Nicolas/Documents/GitHub/Shadowrun/Shadowrun-api/Gemfile",
 		"/C/Users/Nicolas/Documents/GitHub/Shadowrun/Shadowrun-api/log/test.log",
 		"/C/Users/Nicolas/Documents/GitHub/Shadowrun/Shadowrun-api/spec/factories/user_factor.rb",
-		"/C/Users/Nicolas/Documents/GitHub/Shadowrun/Shadowrun-api/app/models/user.rb",
 		"/C/Users/Nicolas/Documents/GitHub/Shadowrun/Shadowrun-api/spec/rails_helper.rb",
 		"/C/Users/Nicolas/Documents/GitHub/Shadowrun/Shadowrun-api/spec/support/factory_bot.rb",
 		"/C/Users/Nicolas/Documents/GitHub/Shadowrun/Shadowrun-api/spec/factories/user.rb",
@@ -205,24 +223,24 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "config/initializers/devise_token_auth.rb",
+					"file": "app/controllers/gm_controller.rb",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2367,
+						"buffer_size": 2058,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2019,
-								2019
+								2018,
+								2018
 							]
 						],
 						"settings":
@@ -233,6 +251,36 @@
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/controllers/player_controller.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5833,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1529,
+								1529
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 444.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,

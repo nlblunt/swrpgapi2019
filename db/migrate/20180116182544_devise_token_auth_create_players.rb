@@ -38,7 +38,8 @@ class DeviseTokenAuthCreatePlayers < ActiveRecord::Migration[5.2]
       t.string :nickname
       t.string :image
       t.string :email
-
+      t.boolean :gm, :null => false, :default => false
+      
       ## Tokens
       t.text :tokens
 

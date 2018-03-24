@@ -65,9 +65,9 @@ class PlayerController < ApplicationController
   def delete_pc
     pc = Pc.find_by_id(params[:id])
     
-    pc.delete
+    pc.destroy
     
-    render nothing: true
+    head :ok
     
   end
   
