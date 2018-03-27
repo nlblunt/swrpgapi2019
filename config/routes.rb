@@ -5,8 +5,8 @@ Rails.application.routes.draw do
   get 'gm/gm_status' => "gm#gm_status"
   get 'gm/get_all_pcs' => "gm#get_all_pcs"
   post 'gm/modify_pc' => "gm#modify_pc"
-  post 'gm/pc_modify_strain' => "gm#pc_modify_strain"
-  post 'gm/pc_modify_wounds' => "gm#pc_modify_wounds"
+  post 'gm/modify_pc_strain' => "gm#modify_pc_strain"
+  post 'gm/modify_pc_wounds' => "gm#modify_pc_wounds"
   post 'gm/get_session_pcs' => "gm#get_session_pcs"
   post 'gm_add_session_pcs' => "gm#add_session_pcs"
   

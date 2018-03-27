@@ -63,7 +63,16 @@
 			"file": "app/controllers/gm_controller.rb",
 			"settings":
 			{
-				"buffer_size": 2058,
+				"buffer_size": 2051,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/models/pc.rb",
+			"settings":
+			{
+				"buffer_size": 9732,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -117,6 +126,7 @@
 		"/C/Users/Nicolas/Documents/GitHub/swrpg-api",
 		"/C/Users/Nicolas/Documents/GitHub/swrpg-api/app",
 		"/C/Users/Nicolas/Documents/GitHub/swrpg-api/app/controllers",
+		"/C/Users/Nicolas/Documents/GitHub/swrpg-api/app/models",
 		"/C/Users/Nicolas/Documents/GitHub/swrpg-api/app/views",
 		"/C/Users/Nicolas/Documents/GitHub/swrpg-api/app/views/gm",
 		"/C/Users/Nicolas/Documents/GitHub/swrpg-api/app/views/player",
@@ -232,15 +242,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2058,
+						"buffer_size": 2051,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2018,
-								2018
+								666,
+								666
 							]
 						],
 						"settings":
@@ -258,6 +268,36 @@
 				},
 				{
 					"buffer": 1,
+					"file": "app/models/pc.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 9732,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								8541,
+								8541
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3621.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
 					"file": "app/controllers/player_controller.rb",
 					"semi_transient": false,
 					"settings":
@@ -280,10 +320,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 444.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 2,
 					"type": "text"
 				}
 			]

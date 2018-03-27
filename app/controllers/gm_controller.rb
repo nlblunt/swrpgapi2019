@@ -25,14 +25,14 @@ class GmController < ApplicationController
     #Modify PC.  Only non-breaking attritubes can be changed
     @pc = Pc.find_by_id(params[:pc][:id])
     
-    @pc.gm_modify(params[:pc], params[:skills])
+    @pc.gm_modify(params[:pc], params[:pc][:skills])
     
     #Save the updated skills into the PC
 
-    render nothing: true
+    head :ok
   end
   
-  def pc_modify_strain
+  def modify_pc_strain
     #Modify PC strain.  Can be + or -
     pc = Pc.find_by_id(params[:id])
 
@@ -43,7 +43,7 @@ class GmController < ApplicationController
     render status: :ok, json: {msg: pc.name + ": strain modified " + params[:amount].to_s, strain: pc.strain_current, time: time}
   end
   
-  def pc_modify_wounds
+  def modify_pc_wounds
     #Modify PC wounds
     pc = Pc.find_by_id(params[:id])
 
