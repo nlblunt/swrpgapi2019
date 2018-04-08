@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   post 'gm/modify_pc_wounds' => "gm#modify_pc_wounds"
   post 'gm/get_session_pcs' => "gm#get_session_pcs"
   post 'gm_add_session_pcs' => "gm#add_session_pcs"
-  get ‘gm/get_all_weapons’ => “gm#get_all_weapons”
+  get 'gm/get_all_weapons' => "gm#get_all_weapons"
   
   #CAREER CONTROLLER ROUTES
   get 'career/index'
