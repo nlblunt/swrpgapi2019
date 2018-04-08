@@ -81,6 +81,13 @@ class GmController < ApplicationController
     render json: g_session.pcs
   end
 
+  def get_all_weapons
+     #Get all weapons in the database
+     weapons = Weapons.all
+
+     render json: weapons
+  end
+
   private
   def require_login
     unless player_signed_in? and current_player.gm == true
