@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
   mount_devise_token_auth_for 'Player', at: 'auth'
 
+  #WEAPON CONTROLLER ROUTES
+  resources :weapon
+  
   #GM CONTROLLER ROUTES
   get 'gm/gm_status' => "gm#gm_status"
   get 'gm/get_all_pcs' => "gm#get_all_pcs"
