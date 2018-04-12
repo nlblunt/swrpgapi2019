@@ -6,6 +6,13 @@ class WeaponController < ApplicationController
   end
 
   def create
+	@weapon = Weapon.create(weapon_params)
+
+	if @weapon.valid?
+		head :created
+	else
+		head :error
+	end
   end
 
   def update
@@ -20,6 +27,13 @@ class WeaponController < ApplicationController
   end
 
   def destroy
+	@weapon = Weapon.find_by_id(params[:id])
+
+	if @weapon.destroy
+		head :ok
+	else
+		head :error
+	end
   end
 
   private
