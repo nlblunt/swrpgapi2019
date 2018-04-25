@@ -5,7 +5,8 @@ class CreateItems < ActiveRecord::Migration[5.2]
       t.integer :price
       t.text :description
       t.text :notes
-
+      t.boolean :template, :default => true
+      
       t.timestamps null: false
     end
 	  
