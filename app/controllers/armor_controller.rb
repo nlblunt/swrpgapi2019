@@ -38,6 +38,6 @@ class ArmorController < ApplicationController
     
       private
       def armor_params
-        params.require(:Armor).permit(:name, :defense, :soak, :price, :description, :notes, :template)
+        params.require(:armor).permit(:name, :defense, :soak, :price, :description, :notes, :template)
       end
 end

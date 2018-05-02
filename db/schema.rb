@@ -40,6 +40,7 @@ ActiveRecord::Schema.define(version: 2018_07_21_033807) do
     t.integer "soak"
     t.integer "price"
     t.text "notes"
+    t.boolean "template", default: true
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -77,6 +78,7 @@ ActiveRecord::Schema.define(version: 2018_07_21_033807) do
     t.integer "price"
     t.text "description"
     t.text "notes"
+    t.boolean "template", default: true
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -238,6 +240,7 @@ ActiveRecord::Schema.define(version: 2018_07_21_033807) do
     t.string "special"
     t.text "description"
     t.text "notes"
+    t.boolean "template", default: true
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["skill_id"], name: "index_weapons_on_skill_id"
