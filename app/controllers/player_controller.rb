@@ -110,18 +110,6 @@ class PlayerController < ApplicationController
 
     render :get_pc_weapons
   end
-
-  def add_weapon
-      #Add the weapon to the PC
-      pc = Pc.find(params[:id])
-      w = Weapon.find(params[:w_id])
-      
-      if pc.weapons << w
-          render json: {msg: "Added weapon"}
-      else
-          render status: :error, json: {e: "Error adding weapon"}
-      end
-  end
     
   def delete_weapon
       #Get the pcs_weapon row to delete

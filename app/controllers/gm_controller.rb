@@ -4,11 +4,13 @@ class GmController < ApplicationController
   def index
   end
   
+  #05.05.18
   def gm_status
     #Does this player hav GM Privs?  If so, just return status OK
     head :ok
   end
   
+  #05.05.18
   def get_all_pcs
     #Returns a list of all PCS
     @pcs = Pc.all
@@ -21,6 +23,7 @@ class GmController < ApplicationController
     #end
   end
   
+  #05.05.18
   def modify_pc
     #Modify PC.  Only non-breaking attritubes can be changed
     @pc = Pc.find_by_id(params[:pc][:id])
@@ -87,6 +90,56 @@ class GmController < ApplicationController
 
      render json: weapons
   end
+
+  #05.05.2018
+  def addWeaponToPc
+    #Add the weapon to the PC
+    #Get the PC and Weapon
+    pc = Pc.find(params[:id])
+    w = Weapon.find(params[:w_id])
+    
+    #Is this weapon a template weapon?  If so, then create a copy and assign
+    #If not a template, assign to new owner
+    if w.template?
+      #Duplicate the weapon
+      @newWeapon = w.deep_dup
+
+      #New weapon is not a template
+      @newWeapon.template = false
+
+      #Save new weapon
+      @newWeapon.save
+
+      if pc.weapons << @newWeapon
+        #Successful, render the new weapon
+        render json: @newWeapon
+      else
+        #Error, send error
+        head :error
+      end
+    else
+      #Delete any old owners for the weapon
+      w.pcs.delete_all
+
+      #Duplicat the weapon
+      @newWeapon = w.deep_dup
+
+      #This is not a template weapon
+      @newWeapon.template = false;
+
+      #Save the new weapon
+      @newWeapon.save
+
+      #Assign to new owner
+      if pc.weapons << @newWeapon
+        #Successful, render the new weapon
+        render json: @newWeapon
+      else
+        #Error, send error
+        head :error
+      end
+    end
+end
 
   private
   def require_login
