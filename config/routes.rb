@@ -15,6 +15,7 @@ Rails.application.routes.draw do
   post 'gm/get_session_pcs' => "gm#get_session_pcs"
   post 'gm_add_session_pcs' => "gm#add_session_pcs"
   get 'gm/get_all_weapons' => "gm#get_all_weapons"
+  post 'gm/addWeaponToPc' => "gm#addWeaponToPc"
   
   #CAREER CONTROLLER ROUTES
   get 'career/index'
