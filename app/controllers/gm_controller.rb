@@ -282,7 +282,6 @@ class GmController < ApplicationController
       i.destroy
     end
   end
-end
 
   private
   def require_login
