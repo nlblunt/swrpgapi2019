@@ -57,6 +57,7 @@ class GmController < ApplicationController
     render status: :ok, json: {msg: pc.name + ": wounds modified " + params[:amount].to_s, wounds: pc.wounds_current, time: time}
   end
 
+  #???
   def get_session_pcs
     #Returns a list of PCs in the current game session
     
@@ -69,6 +70,7 @@ class GmController < ApplicationController
     render json: @pcs
   end
   
+  #???
   def add_session_pcs
     #Adds a PC to the game session
     #Get the session ID
@@ -84,6 +86,7 @@ class GmController < ApplicationController
     render json: g_session.pcs
   end
 
+  #???
   def get_all_weapons
      #Get all weapons in the database
      weapons = Weapons.all
@@ -139,6 +142,146 @@ class GmController < ApplicationController
         head :error
       end
     end
+  end
+
+  #05.05.2018
+  def addArmorToPc
+    #Add the weapon to the PC
+    #Get the PC and Weapon
+    pc = Pc.find(params[:id])
+    a = Armor.find(params[:a_id])
+    
+    #Is this weapon a template weapon?  If so, then create a copy and assign
+    #If not a template, assign to new owner
+    if a.template?
+      #Duplicate the weapon
+      @newArmor = a.deep_dup
+
+      #New weapon is not a template
+      @newArmor.template = false
+
+      #Save new weapon
+      @newArmor.save
+
+      if pc.armors << @newArmor
+        #Successful, render the new weapon
+        render json: @newArmor
+      else
+        #Error, send error
+        head :error
+      end
+    else
+      #Delete any old owners for the weapon
+      a.pcs.delete_all
+
+      #Duplicat the weapon
+      @newArmor = a.deep_dup
+
+      #This is not a template weapon
+      @newArmor.template = false;
+
+      #Save the new weapon
+      @newArmor.save
+
+      #Assign to new owner
+      if pc.armors << @newArmor
+        #Successful, render the new weapon
+        render json: @newArmor
+      else
+        #Error, send error
+        head :error
+      end
+    end
+  end
+
+  #05.05.2018
+  def addItemToPc
+    #Add the item to the PC
+    #Get the PC and Item
+    pc = Pc.find(params[:id])
+    i = Item.find(params[:i_id])
+    
+    #Is this item a template item?  If so, then create a copy and assign
+    #If not a template, assign to new owner
+    if i.template?
+      #Duplicate the item
+      @newItem = i.deep_dup
+
+      #New item is not a template
+      @newItem.template = false
+
+      #Save new item
+      @newItem.save
+
+      if pc.items << @newItem
+        #Successful, render the new item
+        render json: @newItem
+      else
+        #Error, send error
+        head :error
+      end
+    else
+      #Delete any old owners for the item
+      i.pcs.delete_all
+
+      #Duplicat the item
+      @newItem = i.deep_dup
+
+      #This is not a template item
+      @newItem.template = false;
+
+      #Save the new item
+      @newItem.save
+
+      #Assign to new owner
+      if pc.items << @newItem
+        #Successful, render the new item
+        render json: @newItem
+      else
+        #Error, send error
+        head :error
+      end
+    end
+  end
+
+  #05.09.2018
+  def removeWeaponFromPc
+    #Remove the owner of this weapon
+    w = Weapon.find(params[:w_id])
+
+    w.pcs.delete_all
+
+    #Should this armor be destroyed too?
+    if params[:destroy]?
+      w.destroy
+    end
+  end
+
+  #05.09.2018
+  def removeArmorFromPc
+    #Remove the owner of this armor
+    a = Armor.find(params[:a_id])
+
+    i.pcs.delete_all
+
+    #Should this armor be destroyed too?
+    if params[:destroy]?
+      i.destroy
+    end
+  end
+
+  #05.09.2018
+  def removeItemFromPc
+    #Remove the owner of this item
+    i = Item.find(params[:i_id])
+
+    i.pcs.delete_all
+
+    #Should this item be destroyed too?
+    if params[:destroy]?
+      i.destroy
+    end
+  end
 end
 
   private

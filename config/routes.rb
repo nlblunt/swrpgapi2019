@@ -12,11 +12,17 @@ Rails.application.routes.draw do
   post 'gm/modify_pc' => "gm#modify_pc"
   post 'gm/modify_pc_strain' => "gm#modify_pc_strain"
   post 'gm/modify_pc_wounds' => "gm#modify_pc_wounds"
-  post 'gm/get_session_pcs' => "gm#get_session_pcs"
-  post 'gm_add_session_pcs' => "gm#add_session_pcs"
-  get 'gm/get_all_weapons' => "gm#get_all_weapons"
+  #post 'gm/get_session_pcs' => "gm#get_session_pcs"
+  #post 'gm_add_session_pcs' => "gm#add_session_pcs"
+  #get 'gm/get_all_weapons' => "gm#get_all_weapons"
+
   post 'gm/addWeaponToPc' => "gm#addWeaponToPc"
-  
+  post 'gm/addArmorToPc' => 'gm#addArmorToPc'
+  post 'gm/addItemToPc' => 'gm#addItemToPc'
+  post 'gm/removeWeaponFromPc' => 'gm#removeWeaponFromPc'
+  post 'gm/removeArmorFromPc' => 'gm#removeArmorFromPc'
+  post 'gm/removeItemFromPc' => 'gm#removeItemFromPc'
+
   #CAREER CONTROLLER ROUTES
   get 'career/index'
   get "career/get-career-specializations/:id" => "career#get_career_specializations"
@@ -26,8 +32,8 @@ Rails.application.routes.draw do
   #PLAYER CONTROLLER ROUTES
   #resources :player
   #get "player/get_pc/:id" => "player#get_pc"
+  post 'player/updatePlayerData' => 'player#updatePlayerData'
   post "player/get-player-pcs" => "player#get_player_pcs"
-  #get "users/player_check" => "player#player_check"
   post "player/pc-create" => "player#create_pc"
   post "player/delete_pc" => "player#delete_pc"
   get "player/get-pc-xp/:id" => "player#get_pc_xp"
