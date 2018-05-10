@@ -250,11 +250,6 @@ class GmController < ApplicationController
     w = Weapon.find(params[:w_id])
 
     w.pcs.delete_all
-
-    #Should this armor be destroyed too?
-    if params[:destroy]?
-      w.destroy
-    end
   end
 
   #05.09.2018
@@ -262,12 +257,7 @@ class GmController < ApplicationController
     #Remove the owner of this armor
     a = Armor.find(params[:a_id])
 
-    i.pcs.delete_all
-
-    #Should this armor be destroyed too?
-    if params[:destroy]?
-      i.destroy
-    end
+    a.pcs.delete_all
   end
 
   #05.09.2018
@@ -276,13 +266,7 @@ class GmController < ApplicationController
     i = Item.find(params[:i_id])
 
     i.pcs.delete_all
-
-    #Should this item be destroyed too?
-    if params[:destroy]?
-      i.destroy
-    end
   end
-end
 
   private
   def require_login

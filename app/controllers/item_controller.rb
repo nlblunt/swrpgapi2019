@@ -27,6 +27,7 @@ class ItemController < ApplicationController
         end
       end
     
+    
       def destroy
         @Item = Item.find_by_id(params[:id])
     
