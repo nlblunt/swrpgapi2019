@@ -11,5 +11,6 @@ FactoryBot.define do
     wounds_thresh 10
     strain_thresh 10
     description "Some description stuff here."
+    bonus "None"
   end
 end

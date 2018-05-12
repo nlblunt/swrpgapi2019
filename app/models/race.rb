@@ -1,3 +1,5 @@
 class Race < ApplicationRecord
-    #belongs_to :pc
+  #Required fields
+  validates_presence_of :name, :brawn, :agility, :intellect, :cunning, :willpower
+  #belongs_to :pc
 end
