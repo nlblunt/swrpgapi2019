@@ -12,11 +12,14 @@
 
 ActiveRecord::Schema.define(version: 2018_07_21_033807) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "active_storage_attachments", force: :cascade do |t|
     t.string "name", null: false
     t.string "record_type", null: false
-    t.integer "record_id", null: false
-    t.integer "blob_id", null: false
+    t.bigint "record_id", null: false
+    t.bigint "blob_id", null: false
     t.datetime "created_at", null: false
     t.index ["blob_id"], name: "index_active_storage_attachments_on_blob_id"
     t.index ["record_type", "record_id", "name", "blob_id"], name: "index_active_storage_attachments_uniqueness", unique: true
@@ -46,8 +49,8 @@ ActiveRecord::Schema.define(version: 2018_07_21_033807) do
   end
 
   create_table "armors_pcs", force: :cascade do |t|
-    t.integer "armor_id"
-    t.integer "pc_id"
+    t.bigint "armor_id"
+    t.bigint "pc_id"
     t.index ["armor_id"], name: "index_armors_pcs_on_armor_id"
     t.index ["pc_id"], name: "index_armors_pcs_on_pc_id"
   end
@@ -60,15 +63,15 @@ ActiveRecord::Schema.define(version: 2018_07_21_033807) do
   end
 
   create_table "careers_pcs", id: false, force: :cascade do |t|
-    t.integer "career_id"
-    t.integer "pc_id"
+    t.bigint "career_id"
+    t.bigint "pc_id"
     t.index ["career_id"], name: "index_careers_pcs_on_career_id"
     t.index ["pc_id"], name: "index_careers_pcs_on_pc_id"
   end
 
   create_table "careers_skills", id: false, force: :cascade do |t|
-    t.integer "career_id"
-    t.integer "skill_id"
+    t.bigint "career_id"
+    t.bigint "skill_id"
     t.index ["career_id"], name: "index_careers_skills_on_career_id"
     t.index ["skill_id"], name: "index_careers_skills_on_skill_id"
   end
@@ -84,8 +87,8 @@ ActiveRecord::Schema.define(version: 2018_07_21_033807) do
   end
 
   create_table "items_pcs", force: :cascade do |t|
-    t.integer "item_id"
-    t.integer "pc_id"
+    t.bigint "item_id"
+    t.bigint "pc_id"
     t.index ["item_id"], name: "index_items_pcs_on_item_id"
     t.index ["pc_id"], name: "index_items_pcs_on_pc_id"
   end
@@ -108,9 +111,9 @@ ActiveRecord::Schema.define(version: 2018_07_21_033807) do
     t.integer "soak"
     t.string "obligation_type"
     t.integer "obligation_amount"
-    t.integer "player_id"
-    t.integer "race_id"
-    t.integer "career_id"
+    t.bigint "player_id"
+    t.bigint "race_id"
+    t.bigint "career_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "avatar"
@@ -121,15 +124,15 @@ ActiveRecord::Schema.define(version: 2018_07_21_033807) do
   end
 
   create_table "pcs_sessions", force: :cascade do |t|
-    t.integer "pc_id"
-    t.integer "session_id"
+    t.bigint "pc_id"
+    t.bigint "session_id"
     t.index ["pc_id"], name: "index_pcs_sessions_on_pc_id"
     t.index ["session_id"], name: "index_pcs_sessions_on_session_id"
   end
 
   create_table "pcs_skills", force: :cascade do |t|
-    t.integer "pc_id"
-    t.integer "skill_id"
+    t.bigint "pc_id"
+    t.bigint "skill_id"
     t.integer "rank", default: 0
     t.boolean "cskill", default: false
     t.index ["pc_id"], name: "index_pcs_skills_on_pc_id"
@@ -137,15 +140,15 @@ ActiveRecord::Schema.define(version: 2018_07_21_033807) do
   end
 
   create_table "pcs_specializations", id: false, force: :cascade do |t|
-    t.integer "pc_id"
-    t.integer "specialization_id"
+    t.bigint "pc_id"
+    t.bigint "specialization_id"
     t.index ["pc_id"], name: "index_pcs_specializations_on_pc_id"
     t.index ["specialization_id"], name: "index_pcs_specializations_on_specialization_id"
   end
 
   create_table "pcs_weapons", force: :cascade do |t|
-    t.integer "pc_id"
-    t.integer "weapon_id"
+    t.bigint "pc_id"
+    t.bigint "weapon_id"
     t.index ["pc_id"], name: "index_pcs_weapons_on_pc_id"
     t.index ["weapon_id"], name: "index_pcs_weapons_on_weapon_id"
   end
@@ -215,8 +218,8 @@ ActiveRecord::Schema.define(version: 2018_07_21_033807) do
   end
 
   create_table "skills_specializations", id: false, force: :cascade do |t|
-    t.integer "skill_id"
-    t.integer "specialization_id"
+    t.bigint "skill_id"
+    t.bigint "specialization_id"
     t.index ["skill_id"], name: "index_skills_specializations_on_skill_id"
     t.index ["specialization_id"], name: "index_skills_specializations_on_specialization_id"
   end
@@ -224,7 +227,7 @@ ActiveRecord::Schema.define(version: 2018_07_21_033807) do
   create_table "specializations", force: :cascade do |t|
     t.string "name"
     t.text "descriptin"
-    t.integer "career_id"
+    t.bigint "career_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["career_id"], name: "index_specializations_on_career_id"
@@ -232,7 +235,7 @@ ActiveRecord::Schema.define(version: 2018_07_21_033807) do
 
   create_table "weapons", force: :cascade do |t|
     t.string "name"
-    t.integer "skill_id"
+    t.bigint "skill_id"
     t.integer "damage"
     t.integer "critical"
     t.string "range"

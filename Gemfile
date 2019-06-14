@@ -1,12 +1,12 @@
-source 'https://rubygems.org'
+source 'http://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.4.4'
+ruby '2.5.3'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.2.0.beta2'
+gem 'rails', '~> 5.2.3'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+# gem 'sqlite3'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
@@ -33,7 +33,7 @@ gem 'rack-cors', :require => 'rack/cors'
 
 gem 'wdm', '>= 0.1.0' if Gem.win_platform?
 
-gem 'pg', '~> 0.18'
+gem 'pg'
 gem 'figaro'
 
 group :development, :test do
